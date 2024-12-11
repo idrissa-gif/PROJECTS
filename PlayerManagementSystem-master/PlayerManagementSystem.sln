@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlayerManagementSystem", "PlayerManagementSystem\PlayerManagementSystem.vcxproj", "{BD8D1F47-5082-43D5-ABCC-AF4F5D08337D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD8D1F47-5082-43D5-ABCC-AF4F5D08337D}.Debug|x64.ActiveCfg = Debug|x64
+		{BD8D1F47-5082-43D5-ABCC-AF4F5D08337D}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22BE24E2-2F89-4231-A3EB-5A1A9B802D46}
+	EndGlobalSection
+EndGlobal

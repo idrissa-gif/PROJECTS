@@ -1,0 +1,10 @@
+import collections;
+e = int(input("Enter the number of edges"))
+
+graph = collections.defaultdict(list)
+for i in range(e):
+    u , v = int(input()), int(input())
+    graph[u].append(v)
+    graph[v].append(u)
+print(graph)
+    

@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1612845806 source:c:\training\project\mazer\mazer\main.cpp
+	"pause.h"
+	<graphics.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+	"movement.h"
+	"Coins.h"
+	"bonus.h"
+
+1612877088 c:\training\project\mazer\mazer\pause.h
+	<graphics.h>
+	<windows.h>
+	"Feauture.h"
+
+1612862233 c:\training\project\mazer\mazer\movement.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<graphics.h>
+	<windows.h>
+	"map.h"
+	"timer.h"
+
+1612807397 c:\training\project\mazer\mazer\map.h
+	<graphics.h>
+	<stdio.h>
+
+1612923304 c:\training\project\mazer\mazer\timer.h
+	<time.h>
+	<string.h>
+	<stdlib.h>
+	<graphics.h>
+
+1612922957 c:\training\project\mazer\mazer\feauture.h
+	<graphics.h>
+	<conio.h>
+	<stdio.h>
+
+1612362518 c:\training\project\mazer\mazer\key.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+
+1612796719 c:\training\project\mazer\mazer\bonus.h
+	<stdio.h>
+	<math.h>
+
+1612426240 c:\training\project\mazer\mazer\coins.h
+	<stdio.h>
+	<graphics.h>
+	<math.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+
