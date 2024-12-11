@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="P2" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lbms.DashboardController">
+   <children>
+      <AnchorPane fx:id="P1" layoutY="3.0" prefHeight="551.0" prefWidth="540.0" stylesheets="@dashboard.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="Profile" layoutX="5.0" layoutY="120.0" prefHeight="428.0" prefWidth="324.0" stylesheets="@dashboard.css" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="120.0">
+               <children>
+                  <AnchorPane layoutX="101.0" layoutY="21.0">
+                     <children>
+                        <ImageView fx:id="ImageViewAdmin" fitHeight="114.0" fitWidth="112.0" layoutY="-7.0">
+                           <image>
+                              <Image url="@images/images.png" />
+                           </image>
+                        </ImageView>
+                        <Hyperlink layoutX="19.0" layoutY="110.0" onAction="#chooseFile_and_changeImage" text="Change" />
+                     </children>
+                  </AnchorPane>
+                  <Pane layoutX="26.0" layoutY="180.0" prefHeight="33.0" prefWidth="261.0">
+                     <children>
+                        <Label layoutX="33.0" layoutY="8.0" text="Name" />
+                        <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="3.0" layoutY="2.0">
+                           <image>
+                              <Image url="@icons/username.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="Namelabel" layoutX="96.0" layoutY="8.0" prefHeight="17.0" prefWidth="164.0" text="root" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="26.0" layoutY="255.0" prefHeight="33.0" prefWidth="313.0">
+                     <children>
+                        <Label layoutX="31.0" layoutY="8.0" prefHeight="17.0" prefWidth="37.0" text="Email" />
+                        <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="2.0" layoutY="5.0">
+                           <image>
+                              <Image url="@icons/email.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="emailLabel" layoutX="95.0" layoutY="8.0" prefHeight="17.0" prefWidth="208.0" text="admin@iutlibrary-dhaka.edu" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="26.0" layoutY="295.0" prefHeight="33.0" prefWidth="261.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="8.0" text="Phone" />
+                        <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="2.0" layoutY="2.0">
+                           <image>
+                              <Image url="@icons/phone.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="phoneLabel" layoutX="95.0" layoutY="8.0" prefHeight="17.0" prefWidth="164.0" text="01860963214" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="26.0" layoutY="339.0" prefHeight="33.0" prefWidth="261.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="8.0" text="Address" />
+                        <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="2.0" layoutY="2.0">
+                           <image>
+                              <Image url="@icons/address.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="AddressLabel" layoutX="95.0" layoutY="8.0" prefHeight="17.0" prefWidth="164.0" text="Kb Rd 1704 Gazipur" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="27.0" layoutY="218.0" prefHeight="33.0" prefWidth="261.0">
+                     <children>
+                        <Label layoutX="33.0" layoutY="8.0" text="Role" />
+                        <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="3.0" layoutY="2.0">
+                           <image>
+                              <Image url="@icons/username.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="RoleLabel" layoutX="96.0" layoutY="8.0" prefHeight="17.0" prefWidth="164.0" text="Librarian" />
+                     </children>
+                  </Pane>
+                  <Hyperlink fx:id="Newpassword" layoutX="91.0" layoutY="391.0" onAction="#changePassword" text="Change Password" />
+               </children>
+            </AnchorPane>
+            <Pane fx:id="HeaderPane" layoutY="-3.0" prefHeight="114.0" prefWidth="587.0" stylesheets="@dashboard.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" graphicTextGap="2.0" layoutX="148.0" layoutY="13.0" prefHeight="88.0" prefWidth="313.0" text="Home / Dashboard" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="82.0" fitWidth="81.0" layoutX="62.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../StudentApp/src/main/resources/com/example/lbms/images/dash.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <BarChart fx:id="Adminchart" layoutX="349.0" layoutY="109.0" prefHeight="440.0" prefWidth="460.0" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="0.0">
+        <xAxis>
+          <CategoryAxis fx:id="CategoryAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="NumberAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

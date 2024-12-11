@@ -1,0 +1,88 @@
+ /* MenuBar */
+
+ #Menubar {
+
+     margin-left: 0px;
+     width: 100%;
+     height: auto;
+     background: #FCD19C;
+ }
+
+ .navbar-brand img {
+     height: 40px;
+     width: 50px;
+ }
+
+ .card-body{
+
+    background-color: #FFC0CB;
+ }
+.card-footer{
+    background-color: blue;
+}
+
+ .card-tour-title {
+     font-family: serif;
+      text-decoration: underline;
+     font-weight: bold;
+
+ }
+
+ .card-title {
+     font-weight: bolder;
+ }
+
+
+ .card-price {
+     font-weight: bolder;
+     color: green;
+ }
+
+.no-bold{
+font-weight: lighter;
+text-transform: none;
+}
+
+
+ .card-img-top {
+     width: 200px;
+     height: 300px;
+ }
+
+ .logo {
+     width: 35px;
+     height: 30px;
+     border-radius: 50%;
+ }
+
+ /* .card-deck{
+    margin-top: 10px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: .5rem;
+} */
+
+ /* MenuBar End */
+
+
+ /* .card {
+     width: 300px;
+     background-color: green;
+     margin-left: ;
+
+ } */
+ /*
+ .card-body {
+     width: auto;
+     background-color:grey;
+    
+ }
+
+ .card-img-top {
+     width: auto;
+ }
+ .card-img-bottom {
+    width: 30px;
+     height: 100px;
+ } */
