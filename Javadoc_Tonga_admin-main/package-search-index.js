@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.visitafrica.tonga"},{"l":"com.visitafrica.tonga.config"},{"l":"com.visitafrica.tonga.controller"},{"l":"com.visitafrica.tonga.model"},{"l":"com.visitafrica.tonga.repository"},{"l":"com.visitafrica.tonga.service"}];updateSearchResults();

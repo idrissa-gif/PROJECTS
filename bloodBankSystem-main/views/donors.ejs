@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank System - Browse Donors</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation bar at the very top -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/donors">Browse Donors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/recipients">Find Recipients</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="text-center mt-5">
+            <h1 class="display-4">Browse Donors</h1>
+        </header>
+        <main class="text-center my-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Blood Type</th>
+                        <th>Contact Info</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% donors.forEach(donor=> { %>
+                        <tr data-donor-id="<%= donor.id %>">
+                            <td>
+                                <%= donor.first_name %>
+                            </td>
+                            <td>
+                                <%= donor.blood_type %>
+                            </td>
+                            <td>
+                                <%= donor.contact_number %>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger remove-donor-button"
+                                    data-donor-id="<%= donor.id %>">Remove</button>
+                                <button class="btn btn-primary edit-donor-button"
+                                    data-donor-id="<%= donor.id %>">Edit</button>
+                            </td>
+                        </tr>
+                        <% }); %>
+                </tbody>
+            </table>
+
+            <button class="btn btn-success add-donor-button">Add Donor</button>
+        </main>
+        
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add your custom JavaScript for handling remove, add, and edit actions -->
+    <script src="/js/donors.js"></script>
+</body>
+
+</html>

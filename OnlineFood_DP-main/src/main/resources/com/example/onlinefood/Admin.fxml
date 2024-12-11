@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="814.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlinefood.DishOrderController">
+    <tabs>
+        <Tab text="Add a Dish">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="535.0" fitWidth="693.0" layoutX="47.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@back.jpeg" />
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="nameField" layoutX="130.0" layoutY="127.0" prefHeight="26.0" prefWidth="553.0" promptText="Dish Name">
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                        </TextField>
+                        <TextField fx:id="descriptionField" layoutX="130.0" layoutY="173.0" prefHeight="26.0" prefWidth="553.0" promptText="Description">
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                        </TextField>
+                        <TextField fx:id="ingredientsField" layoutX="131.0" layoutY="217.0" prefHeight="26.0" prefWidth="553.0" promptText="Ingredients">
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                        </TextField>
+                        <Button layoutX="380.0" layoutY="445.0" mnemonicParsing="false" onAction="#InsertPizza" text="Add" />
+                  <TextField fx:id="priceField" layoutX="131.0" layoutY="259.0" prefHeight="26.0" prefWidth="553.0" promptText="Price">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </TextField>
+                <!-- Add a Button to trigger the file chooser -->
+                <Button layoutX="130.0" layoutY="310.0" mnemonicParsing="false" onAction="#chooseImage" text="Choose Image" />
+
+                <!-- Display the chosen image -->
+                <ImageView fx:id="selectedImageView" fitHeight="153.0" fitWidth="193.0" layoutX="490.0" layoutY="300.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="deliverationTab" text="Dishs">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#displayPizzaTable" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="DishTableView" layoutX="-6.0" layoutY="-1.0" prefHeight="575.0" prefWidth="821.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="NameColumn" prefWidth="133.0" text="Name" />
+                                <TableColumn fx:id="DescriptionColumn" prefWidth="159.0" text="Description" />
+                                <TableColumn fx:id="IngredientsColumn" minWidth="0.0" prefWidth="162.0" text="Ingredients" />
+                                <TableColumn fx:id="PriceColumn" minWidth="0.0" prefWidth="162.0" text="Price" />
+                        <TableColumn fx:id="ImageColumn" minWidth="0.0" prefWidth="162.0" text="Image" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

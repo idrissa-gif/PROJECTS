@@ -1,0 +1,11 @@
+/* Add this to your custom CSS file (e.g., style.css) */
+.logout-link {
+    color: red;
+    /* You can further style the link, e.g., hover effects, underlines, etc. */
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+    /* Add an underline on hover */
+    /* You can add other hover effects as needed */
+}
